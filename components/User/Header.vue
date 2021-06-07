@@ -3,15 +3,13 @@
     <div
       class="w-100 h-auto p-4 d-flex flex-row mb-3"
       style="background-color: #e6b3b3;"
-      v-for="item in user"
-      :key="item._id"
     >
-      <b-avatar :src="item.pp" size="6rem"></b-avatar>
+      <b-avatar :src="user.pp" size="6rem"></b-avatar>
       <div class="d-flex flex-column">
         <div class="d-flex flex-row">
           <div class="d-flex flex-row">
             <span class="username ml-3"
-              >{{ item.name }} {{ item.lastName }}</span
+              >{{ user.name }} {{ user.lastName }}</span
             >
           </div>
           <div class="ml-auto">
@@ -23,7 +21,7 @@
                 class="mr-1"
               ></b-icon>
               <span class="subname"
-                >Favori: {{ item.favoriteSeries.length }}</span
+                >Favori: {{ user.favoriteSeries.length }}</span
               >
 
               <b-icon
@@ -33,7 +31,7 @@
                 class="ml-2 mr-1"
               ></b-icon>
 
-              <span class="subname">Yorum: {{ item.comments.length }}</span>
+              <span class="subname">Yorum: {{ user.comments.length }}</span>
             </div>
           </div>
         </div>
@@ -49,7 +47,7 @@
                 class="mr-1"
               ></b-icon>
               Katılım Tarihi:<span class="textbold ml-1">
-                {{ item.uploadDate }}</span
+                {{ user.uploadDate }}</span
               >
             </div>
 
@@ -61,7 +59,7 @@
                 class="mr-1"
               ></b-icon>
 
-              Cinsiyet: <span class="textbold ml-1">{{ item.male }}</span>
+              Cinsiyet: <span class="textbold ml-1">{{ user.male }}</span>
             </div>
             <div class="subname d-flex flex-row ct">
               <b-icon
@@ -71,7 +69,7 @@
                 class="mr-1"
               ></b-icon>
               Favori Dizi:
-              <span class="textbold ml-1">{{ item.favorite }}</span>
+              <span class="textbold ml-1">{{ user.favorite }}</span>
             </div>
 
             <div class="subname d-flex flex-row ct">
@@ -81,7 +79,7 @@
                 scale="0.9"
                 class="mr-1"
               ></b-icon>
-              Doğum Tarihi:<span class="textbold ml-1"> {{ item.date }}</span>
+              Doğum Tarihi:<span class="textbold ml-1"> {{ user.date }}</span>
             </div>
           </div>
         </div>
@@ -94,9 +92,9 @@
 export default {
   props: {
     user: {
-      type: Array,
+      type: Object,
       default: () => {
-        return [];
+        return {};
       }
     }
   }

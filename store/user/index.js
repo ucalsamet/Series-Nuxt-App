@@ -4,7 +4,7 @@ export default {
   },
   mutations: {
     setUsers(state, payload) {
-      state.users.push(payload);
+      state.users = payload;
     }
   },
   actions: {

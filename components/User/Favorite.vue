@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div v-for="item in user" :key="item._id">
+    <div>
       <b-row>
         <b-col
           md="3"
-          v-for="serie in item.favoriteSeries.slice(0, 4)|| ''"
+          v-for="serie in user.favoriteSeries.slice(0, 4)|| ''"
           :key="serie._id"
         >
           <div
@@ -41,7 +41,7 @@
       <b-row class="mt-2">
         <b-col
           md="3"
-          v-for="serie in item.favoriteSeries.slice(4, 8)|| ''"
+          v-for="serie in user.favoriteSeries.slice(4, 8)|| ''"
           :key="serie._id"
         >
           <div
@@ -88,9 +88,9 @@ export default {
   },
   props: {
     user: {
-      type: Array,
+      type: Object,
       default: () => {
-        return [];
+        return {};
       }
     }
   }

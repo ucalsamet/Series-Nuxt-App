@@ -1,11 +1,10 @@
 <template>
   <div class="w-100 h-auto p-4" style="background-color:  #e0e0eb;">
-    <div v-for="item in user"
-      :key="item._id">
+    <div>
       <div
       class="w-100 h-auto p-4 d-flex flex-row mb-3"
       style="background-color: #c2d6d6;"
-      v-for="serie in item.comments"
+      v-for="serie in user.comments"
       :key="serie._id"
     >
       <div class="d-flex flex-column">
@@ -47,9 +46,9 @@ export default {
   },
   props: {
     user: {
-      type: Array,
+      type: Object,
       default: () => {
-        return [];
+        return {};
       }
     }
   }

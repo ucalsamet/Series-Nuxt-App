@@ -30,7 +30,7 @@ export default {
   },
   computed: {
     getUsers() {
-      return this.$store.getters.getUsers(this.$route.params._userID);
+      return this.$store.getters.getUsers(this.$route.params.userID);
     }
   }
 };
