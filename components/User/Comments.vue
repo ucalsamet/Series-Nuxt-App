@@ -17,7 +17,12 @@
           <div class="ml-auto">
             <div class="d-flex flex-row">
               <span class="text mr-1">{{ serie.uploadDate }}</span>
-            
+            <b-icon
+                icon="calendar2-check"
+                variant="dark"
+                scale="1"
+                class="ct"
+              ></b-icon>
             </div>
           </div>
         </div>

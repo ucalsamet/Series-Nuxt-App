@@ -31,7 +31,12 @@
           <div class="ml-auto">
             <div class="d-flex flex-row">
               <span class="text mr-1">{{ comment.uploadDate }}</span>
-            
+              <b-icon
+                icon="calendar2-check"
+                variant="dark"
+                scale="1"
+                class="ct"
+              ></b-icon>
             </div>
           </div>
         </div>
@@ -77,8 +82,8 @@ export default {
             userId: i.userId,
             userName: i.userName,
             userLastName: i.userLastName,
-            value:i.value,
-            userpp:i.userpp
+            value: i.value,
+            userpp: i.userpp
           });
         }
       });

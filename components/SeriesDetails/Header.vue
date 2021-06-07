@@ -21,14 +21,18 @@
             block
             variant="secondary"
             v-b-modal.commentmodal
-            @click="commentModal =true"
+            @click="commentModal = true"
             ><b-icon icon="chat-dots" scale=".8"></b-icon>
             <span class="ml-1">Yorum Yap</span></b-button
           >
         </div>
       </div>
       <SeriesDetailsFragmanPopup :serie="serie" />
-      <SeriesDetailsCommentPopup :isAuth="isAuth" :commentModal="commentModal" :serie="serie" />
+      <SeriesDetailsCommentPopup
+        :isAuth="isAuth"
+        :commentModal="commentModal"
+        :serie="serie"
+      />
       <div class="d-flex flex-column">
         <div class="d-flex flex-row">
           <span class="name ml-3">{{ serie.name }}</span>
@@ -61,26 +65,46 @@
         </div>
         <div class="d-flex flex-row mt-2">
           <div class="ml-3">
-         
+            <b-icon
+              icon="globe"
+              variant="dark"
+              scale="0.9"
+              class="ct"
+            ></b-icon>
           </div>
           <span class="subname ml-1">{{ serie.production }}</span>
           <span class="subname ml-1 mb-1">|</span>
 
           <div class="ml-2">
-          
+            <b-icon
+              icon="calendar2-check"
+              variant="dark"
+              scale="0.9"
+              class="ct"
+            ></b-icon>
           </div>
           <span class="subname ml-1">{{ serie.year }}</span>
           <span class="subname ml-1 mb-1">|</span>
 
           <div class="ml-2">
-            <span class="subname ml-1">#</span>
+            <b-icon
+              icon="film"
+              variant="dark"
+              scale="0.9"
+              class="ct"
+            ></b-icon>
           </div>
           <span class="subname ml-1">{{ serie.type1 }}, {{ serie.type2 }}</span>
 
           <span class="subname ml-1 mb-1">|</span>
 
           <div class="ml-2">
-       
+            <b-icon
+              icon="camera-reels"
+              variant="dark"
+              scale="0.9"
+              class="ct"
+            ></b-icon>
           </div>
           <span class="subname ml-1">Sezon Sayısı: {{ serie.season }}</span>
         </div>
@@ -109,9 +133,8 @@ export default {
     }
   },
   mounted() {
-    if(this.isAuth === true){
-    this.user;
-
+    if (this.isAuth === true) {
+      this.user;
     }
   },
   data() {
@@ -150,7 +173,7 @@ export default {
       } else {
         alert("Bu özelliği kullanabilmek için giriş yapmalısınız!");
       }
-    },
+    }
   },
   computed: {
     user() {
@@ -194,6 +217,11 @@ export default {
 };
 </script>
 <style scoped>
+.ct {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
 .name {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;

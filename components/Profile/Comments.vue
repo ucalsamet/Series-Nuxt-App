@@ -15,13 +15,21 @@
           <div class="ml-auto">
             <div class="d-flex flex-row">
               <span class="text mr-1">{{ serie.uploadDate }}</span>
-            
+              <b-icon
+                icon="calendar2-check"
+                variant="dark"
+                scale="1"
+                class="ct"
+              ></b-icon>
             </div>
           </div>
         </div>
         <hr class="ml-3" />
 
-        <div class="text ml-3" style="width: 970px; height: auto; background-color:  #C2D6D6;">
+        <div
+          class="text ml-3"
+          style="width: 970px; height: auto; background-color:  #C2D6D6;"
+        >
           "{{ serie.comment }}"
         </div>
       </div>
