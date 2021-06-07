@@ -13,7 +13,7 @@ mongoose.connect(
   process.env.MONGODB_URI ,
   { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false }
 );
-
+console.log("Database_URL",  process.env.MONGODB_URI);
 const SeriesModel = mongoose.model("Series", {
   name: String,
   category: String,
