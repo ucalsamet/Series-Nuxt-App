@@ -11,7 +11,7 @@ app.use(
 
 mongoose.connect(
   process.env.MONGODB_URI ,
-  { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false }
+  { useNewUrlParser: true, useUnifiedTopology: true }
 );
 console.log("Database_URL",  process.env.MONGODB_URI);
 const SeriesModel = mongoose.model("Series", {
