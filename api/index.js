@@ -10,7 +10,7 @@ app.use(
 );
 
 mongoose.connect(
-  "mongodb+srv://ucalsamet:samet98@cluster0.wdfi0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  process.env.MONGODB_URI ,
   { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false }
 );
 
