@@ -43,8 +43,14 @@ export default {
   serverMiddleware: [bodyParser.json(), "~/api"],
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    extends (config, ctx) {
+
+    },
     babel: {
       compact: true
     }
+  },
+  server: {
+    port: process.env.PORT || 8000
   }
 };
