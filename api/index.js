@@ -5,7 +5,7 @@ const app = express();
 
 app.use(
   session({
-    secret: "s4m3t"
+    secret: "m7st0r3"
   })
 );
 
