@@ -2,7 +2,7 @@
   <b-container>
     <div class="d-flex flex-column mt-4">
       <div class="d-flex flex-row">
-        <fa icon="user-astronaut" size="2x" class="bgColorfa"></fa>
+   
         <span class="title ml-2">Bilim Kurgu</span>
       </div>
       <hr />
@@ -13,7 +13,7 @@
 
     <div class="d-flex flex-column mt-4">
       <div class="d-flex flex-row">
-        <fa icon="location-arrow" size="2x" class="bgColorfa2"></fa>
+     
         <span class="title2 ml-2">Aksiyon</span>
       </div>
       <hr />
@@ -24,7 +24,7 @@
 
     <div class="d-flex flex-column mt-4">
       <div class="d-flex flex-row">
-        <fa icon="house-damage" size="2x" class="bgColorfa"></fa>
+    
         <span class="title ml-2">Dram</span>
       </div>
       <hr />
@@ -35,7 +35,7 @@
 
     <div class="d-flex flex-column mt-4">
       <div class="d-flex flex-row">
-        <fa icon="heartbeat" size="2x" class="bgColorfa2"></fa>
+     
         <span class="title2 ml-2">Gerilim</span>
       </div>
       <hr />
@@ -46,7 +46,7 @@
 
     <div class="d-flex flex-column mt-4">
       <div class="d-flex flex-row">
-        <fa icon="pastafarianism" size="2x" class="bgColorfa"></fa>
+   
         <span class="title ml-2">Korku</span>
       </div>
       <hr />
@@ -57,7 +57,6 @@
 
     <div class="d-flex flex-column mt-4">
       <div class="d-flex flex-row">
-        <fa icon="running" size="2x" class="bgColorfa2"></fa>
         <span class="title2 ml-2">Macera</span>
       </div>
       <hr />
@@ -68,7 +67,6 @@
 
     <div class="d-flex flex-column mt-4">
       <div class="d-flex flex-row">
-        <fa icon="laugh-beam" size="2x" class="bgColorfa"></fa>
         <span class="title ml-2">Komedi</span>
       </div>
       <hr />
@@ -79,7 +77,6 @@
 
     <div class="d-flex flex-column mt-4">
       <div class="d-flex flex-row">
-        <fa icon="skull-crossbones" size="2x" class="bgColorfa2"> </fa>
         <span class="title2 ml-2">Suç</span>
       </div>
       <hr />

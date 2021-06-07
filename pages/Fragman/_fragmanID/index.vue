@@ -10,7 +10,6 @@
             variant="dark"
             :to="'/categories/' + getFragman.serieID"
           >
-            <fa icon="film" size="1x" />
             <span class="ml-1">Dizinin Sayfasına Gidin</span></b-button
           >
         </div>

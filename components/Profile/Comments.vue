@@ -15,7 +15,7 @@
           <div class="ml-auto">
             <div class="d-flex flex-row">
               <span class="text mr-1">{{ serie.uploadDate }}</span>
-              <fa icon="user-clock" scale="1x" />
+            
             </div>
           </div>
         </div>

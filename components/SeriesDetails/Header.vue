@@ -61,13 +61,13 @@
         </div>
         <div class="d-flex flex-row mt-2">
           <div class="ml-3">
-            <fa icon="globe-americas" size="1x" />
+         
           </div>
           <span class="subname ml-1">{{ serie.production }}</span>
           <span class="subname ml-1 mb-1">|</span>
 
           <div class="ml-2">
-            <fa icon="calendar-alt" size="1x" />
+          
           </div>
           <span class="subname ml-1">{{ serie.year }}</span>
           <span class="subname ml-1 mb-1">|</span>
@@ -80,7 +80,7 @@
           <span class="subname ml-1 mb-1">|</span>
 
           <div class="ml-2">
-            <fa icon="film" size="1x" />
+       
           </div>
           <span class="subname ml-1">Sezon Sayısı: {{ serie.season }}</span>
         </div>
