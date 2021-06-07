@@ -45,9 +45,9 @@ export default {
   },
 
   bootstrapVue: {
-    icons: true
+    icons: false
   },
   serverMiddleware: [bodyParser.json(), "~/api"],
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {}
+  build: {},
 };
